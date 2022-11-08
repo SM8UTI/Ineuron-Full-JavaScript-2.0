@@ -1,5 +1,5 @@
 # Ineuron Full JavaScript 2.0
-s
+
 ## Assignments : 
 
 |Assignments No|Date|Link|
