@@ -1,6 +1,6 @@
-## Full Stack JavaScript 3.0 ( Project - 1 )
+## Full Stack JavaScript 3.0 ( Project - 3 )
 
-### 💻 Website name : `Crypto Market`
+### 💻 Website name : `Fashion Hub`
 
 <br>
 
