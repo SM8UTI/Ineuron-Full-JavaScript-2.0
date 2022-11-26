@@ -41,3 +41,11 @@ Full Stack Javascript 2.0 Course : [Link](https://ineuron.ai/course/Full-Stack-J
 ![image](./FSJS%202.0%20Project%2005/output.png)
 
 ---
+
+<br>
+
+### Project 6 ( Medifine ) :  [Link](FSJS%202.0%20Project%2006/)
+
+![image](./FSJS%202.0%20Project%2006/output.png)
+
+---
