@@ -25,4 +25,4 @@ Time : 2 Hour 30 min
 
 #### PC : 
 
-<img src="output.png" width="100%">
+<img src="Output.png" width="100%">
