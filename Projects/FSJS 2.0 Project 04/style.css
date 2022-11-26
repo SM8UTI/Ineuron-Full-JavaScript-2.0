@@ -3,6 +3,7 @@
 :root{
     --bg:#fff;
     --bgp:#3B855B;
+    --bgs:#F9F5ED;
     --tcp:#000000;
 }
 
@@ -20,7 +21,7 @@ html{
 
 body{
     font-family: "Poppins",sans-serif;
-    background-color: var(--bg);
+    background-color: var(--bgs);
     color: var(--tcp);
 }
 
