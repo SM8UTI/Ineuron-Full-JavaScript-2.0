@@ -9,8 +9,6 @@
 |03|12 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Assignments/12-Nov-2022)|
 
 
-
-
 ## Projects : 
 
 |Projects No|Date|Link|
@@ -18,6 +16,11 @@
 |01|20 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2001)|
 |02|20 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2002)|
 |03|20 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2003)|
-|04|26 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2004)|
-|05|26 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2005)|
-|06|26 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2006)|
+
+## Projects ( Tailwind CSS ) : 
+
+|Projects No|Projects Name|Date|Link|
+|--------------|-------------|----|----|
+|01|VScode Website Clone|27 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Projects/FSJS%202.0%20Project%2001)|
+
+
