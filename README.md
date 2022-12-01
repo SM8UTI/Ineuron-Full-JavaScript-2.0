@@ -9,6 +9,7 @@
 |03|12 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Assignments/12-Nov-2022)|
 
 
+
 ## Projects : 
 
 |Projects No|Date|Link|
