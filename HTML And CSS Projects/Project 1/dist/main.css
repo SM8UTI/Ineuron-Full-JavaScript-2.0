@@ -592,6 +592,7 @@ header{
 
 footer{
     margin-top: 4rem;
+    margin-bottom: 3rem;
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
