@@ -401,7 +401,7 @@ header{
 
 
 .features .container .container-box .items-2{
-    background: linear-gradient(140.72deg, #44403F 11.25%, #5C5C5C 92.59%);;
+    background: linear-gradient(140.72deg, #44403F 11.25%, #5C5C5C 92.59%);
 }
 
 .features .container .container-box .items img{
@@ -451,6 +451,191 @@ header{
     object-fit: cover;
 }
 
+.reviews{
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.reviews .text{
+    text-align: center;
+}
+
+.reviews .text h2{
+    font-size: 2.8rem;
+    font-family: var(--ffp);
+    font-weight: 500;
+}
+
+.reviews .text h2 span{
+    color: var(--bgp);
+    font-weight: 600;
+}
+
+.reviews .text p{
+    max-width: 400px;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+.reviews .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    gap: 1.5rem;
+    place-items: center;
+}
+
+.reviews .container .items{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #272727;
+    border: 2px solid;
+    border-image: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)) 45;
+    padding: 1rem;
+    position: relative;
+}
+
+.reviews .container .items:first-child{
+    background: linear-gradient(140.72deg, #44403F 11.25%, #5C5C5C 92.59%);
+}
+
+.reviews .container .items img{
+    max-width: 200px;
+}
+
+.reviews .container .items p{
+    color: var(--bgw);
+    margin-bottom: 4rem;
+}
+
+.reviews .container .items h5{
+    font-family: var(--ffp);
+    font-size: var(--sm-15);
+    font-weight: 500;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.reviews .container .items h5 span{
+    font-weight: 400;
+    font-size: var(--sm-14);
+    color: var(--bgg);
+}
+
+.reviews .pagination{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .pagination .round{
+    width: 20px;
+    height: 20px;
+    background-color: #272727;
+    border-radius: 100%;
+    margin-bottom: 4rem;
+}
+
+.reviews .pagination .round:first-child{
+    width: 80px;
+    height: 15px;
+    border-radius: 1rem;
+    background-color: #F637EC;
+    box-shadow: 0px 0px 2px 2px var(--bgp);
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+.banner .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.banner .text h2{
+    font-family: var(--ffp);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.banner .text h2 span{
+    font-weight: 600;
+    color: var(--bg);
+}
+
+
+footer{
+    margin-top: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+footer .logo{
+    width: 110px;
+}
+
+footer .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .copyright{
+    color: var(--bgg);
+    font-family: var(--ffp);
+}
+
+footer .copyright a{
+    background-color: var(--bgp);
+    margin-inline: 0.2rem;
+    padding-inline: 0.5rem;
+    color: var(--bgw);
+    border-radius: 4px;
+}
+
+footer .links a:hover{
+    color: var(--bgw);
+}
+
+footer .links a{
+    color: var(--bgg);
+    text-transform: capitalize;
+    transition: color 0.3s ease-in;
+}
+
 @media (max-width:330px) {
     .hero-text h1{
         font-size: var(--md-32);
@@ -481,6 +666,9 @@ header{
 
 @media (max-width:850px) {
     .features .container .container-box .items{
+        max-width: 400px;
+    }
+    .reviews .container .items{
         max-width: 400px;
     }
 }
@@ -523,6 +711,22 @@ header{
 
     .cards-about h2{
         font-size: var(--md-50);
+    }
+
+    .reviews .text h2{
+        font-size: var(--md-50);
+    }
+
+    .reviews .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .banner .text h2{
+        font-size: var(--md-50);
+    }
+
+    footer{
+        flex-direction: row;
     }
 }
 
