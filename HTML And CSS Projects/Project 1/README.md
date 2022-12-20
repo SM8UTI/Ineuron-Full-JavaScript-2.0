@@ -5,7 +5,7 @@
 ### Tech Stack : Html and CSS
 
 
-### Live Url : [live]('https://sm8uti.github.io/Ineuron-Full-JavaScript-2.0/HTML%20And%20CSS%20Projects/Project%201/')
+### Live Url : [live](https://sm8uti.github.io/Ineuron-Full-JavaScript-2.0/HTML%20And%20CSS%20Projects/Project%201/)
 
 ## 📁 Files : 
 
