@@ -69,6 +69,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 9999;
     
 }
 
@@ -205,6 +206,7 @@ header{
 
 .heading h1{
     font-size: 3rem;
+    font-weight: 600;
 }
 
 .heading p{
@@ -230,6 +232,13 @@ header{
     border-radius: 2rem;
     padding: 4rem 1rem;
     max-width: 500px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.service .container .items:hover{
+    background-color: var(--bg);
+    color: var(--bgw);
 }
 
 .service .container .items:nth-child(2){
@@ -243,11 +252,241 @@ header{
 .service .container .items img{
     width: 100px;
     align-self: center;
+    object-fit: contain;
 }
 
 .service .container .items h1{
     font-size: 1.5rem;
 }
+
+.features{
+    padding: 1rem;
+}
+
+.features .heading{
+    text-align: left;
+    max-width: 900px;
+
+}
+
+.features .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.features .container .list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.features .container .list li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.features .container .list img{
+    width: 40px;
+    object-fit: contain;
+}
+
+.features .container .list-1 li{
+    padding: 2rem 1rem;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+    border: 2px solid var(--tc);
+    transition: all 0.4s ease-in-out;
+}
+
+.features .container .list-1 li:hover{
+    scale: 1.01;
+}
+
+.features .container .list-1 li:first-child{
+    background-color: var(--bgp);
+    color: var(--bgw);
+    border: 2px solid var(--bgp);
+}
+
+.features .container .list-2{
+    background-color: var(--bg);
+    color: var(--bgw);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.features .container .list-2 li{
+    background-color: var(--bgs);
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.features .container .list-2 li span{
+    margin-left: 1rem;
+}
+
+.features .container .list-2 li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    translate: 0 -50%;
+    width: 20px;
+    aspect-ratio: 1;
+    background-color: var(--bgw);
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.features .container .list-2 li:hover{
+    background-color: var(--bgw);
+    color: var(--bg);
+}
+
+.features .container .list-2 li:hover::before{
+    background-color: var(--bgs);
+}
+
+.price{
+    margin-top: 4rem;
+    background-color: var(--bg);
+    color: var(--bgw) !important;
+    padding-top: 0.5rem;
+    padding-bottom: 8rem;
+}
+
+
+.price .heading h1{
+    width: 100%;
+    color: var(--bgw);
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+}
+
+.price .heading h1::before{
+    content: url(../images/Icons/arrow-left.svg);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.price .heading h1::after{
+    content: url(../images/Icons/arrow-right.svg);
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.price .container{
+    margin-top: 6rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.price .container .item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--bgw);
+    border-radius: 1rem;
+    color: var(--bg) !important;
+    padding: 1.5rem 1rem;
+    max-width: 500px;
+}
+
+.price .container .item-2{
+    background-color: var(--bgp);
+    color: var(--bgw) !important;
+}
+
+.price .container .item-2 p{
+    color: var(--bgw) !important;
+}
+.price .container .item-2 h1 span{
+    color: var(--bgw) !important;
+    opacity: 80%;
+}
+
+.price .container .item-2 .btn{
+    background-color: var(--bgw);
+    color: var(--bgp);
+}
+
+.price .container .item-2 .line{
+    background-color: var(--bgw) !important;
+    opacity: 90%;
+}
+
+.price .container .item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    
+}
+.price .container .item ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.price .container .item ul li img{
+    width: 1.5rem;
+}
+
+.price .container .item h1{
+    font-size: 3rem;
+}
+
+.price .container .item .line{
+    background-color: var(--tc);
+    width: 100%;
+    height: 1px;
+    border-radius: 2rem;
+    opacity: 80%;
+}
+
+.price .container .item .btn{
+    border: 2px solid var(--bgp);
+}
+
+.price .container .item .btn:hover{
+    background-color: var(--bgw);
+    color: var(--bgp);
+}
+
+.price .container .item h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.price .container .item h1 span{
+    font-size: 2rem;
+    color: var(--tc);
+}
+
+.price .container .item p{
+    color: var(--bg);
+    font-weight: 500;
+}
+
+
 
 @media (max-width:1024px) {
     .header .navbar{
@@ -300,12 +539,60 @@ header{
     .heading h1{
         padding-inline: 1rem;
     }
+
+    .features .container {
+        grid-template-columns: 1fr;
+    }
+
+    .price .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .price .container .item-3{
+        grid-column: span 2;
+        place-self: center;
+    }
 }
 
 @media (max-width:768px) {
     .hero .container .text h1{
         font-size: 3rem;
     }
+
+    .price .container{
+        margin-top: 8rem;
+    }
+
+    .price .heading h1::before{
+        top: 60%;
+    }
+    .price .heading h1::after{
+        top: 60%;
+    }
+
+}
+
+@media (max-width:610px) {
+    .features .container .list-1 li{
+        padding: 1rem;
+    }
+
+    .features .container .list-1 li span{
+        font-size: 1rem;
+    }
+     .features .container .list-2 li span{
+        font-size: 1rem;
+     }
+
+     .heading h1{
+        font-size: 2rem;
+     }
+     .price .container{
+        grid-template-columns: 1fr;
+     }
+     .price .container .item-3{
+        grid-column: span 1;
+     }
 }
 
 
