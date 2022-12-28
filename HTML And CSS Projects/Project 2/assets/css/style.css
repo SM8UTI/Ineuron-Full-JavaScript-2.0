@@ -15,6 +15,20 @@
 
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bgw);
+    opacity: 80%;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--bgp);
+    border-radius: 1rem;
+}
+
 *{
     box-sizing: border-box;
 
@@ -373,6 +387,7 @@ header{
     font-weight: 500;
     position: relative;
     display: inline-block;
+    line-height: 1.5;
 }
 
 .price .heading h1::before{
@@ -487,6 +502,185 @@ header{
 }
 
 
+.feedback{
+    padding: 1rem;
+}
+
+.feedback .heading{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    /* padding-inline: 1rem; */
+}
+
+.feedback .heading h1{
+    flex-basis: 70%;
+}
+
+.feedback .heading p{
+    max-width: 400px;
+}
+
+.feedback .container{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    /* padding-inline: 1rem; */
+    margin-top: 4rem;
+    gap: 4rem;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 4rem;
+    /* margin-left: 1rem; */
+}
+
+.feedback .container .items{
+    min-width: 500px;
+    border: 2px solid var(--tc);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.feedback .container .items p{
+    color: var(--bg);
+    font-weight: 500;
+}
+
+
+.feedback .container .items:hover{
+    background-color: var(--bg);
+    color: var(--bgw) !important;
+}
+
+.feedback .container .items:hover p{
+    color: var(--bgw);
+}
+
+.feedback .container .items .name{
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+}
+
+.feedback .container .items .name span{
+    color: var(--bgs);
+    font-size: 0.8rem;
+}
+
+.feedback .container .items .name h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.feedback .container .items .quote img{
+    width: 40px;
+}
+
+.feedback .container .items .star{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.feedback .container .items .star img{
+    width: 30px;
+}
+
+.contact{
+    margin-top: 4rem;
+    background-color: var(--bg);
+    color: var(--bgw) !important;
+    padding-top: 1rem;
+}
+
+.contact .container .heading{
+    color: var(--bgw);
+    max-width: 900px;
+    margin-inline: auto;
+    line-height: 1.5;
+}
+
+.contact .container{
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.contact .container form{
+    margin-top: 3rem;
+    width: 100%;
+    background-color: var(--bgs);
+    padding:2rem 2rem ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.contact .container form input{
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--bgw);
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.contact .container form button{
+    white-space: nowrap;
+}
+
+footer{
+    background-color: var(--bg);
+    padding: 1rem;
+}
+
+footer .line{
+    margin-top: 2rem;
+    width: 100%;
+    height: 1px;
+    background-color: var(--tc);
+    border-radius: 2rem;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    color: var(--bgw);
+    padding-block: 4rem;
+    padding-inline: 4rem;
+}
+
+footer .container .list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--tc);
+}
+
+footer .container .list h1{
+    font-size: 1.2rem;
+
+}
+
+footer .logo{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    display: inline-block;
+}
 
 @media (max-width:1024px) {
     .header .navbar{
@@ -552,6 +746,12 @@ header{
         grid-column: span 2;
         place-self: center;
     }
+
+    footer .container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 3rem;
+        padding-inline: 2rem;
+    }
 }
 
 @media (max-width:768px) {
@@ -568,6 +768,20 @@ header{
     }
     .price .heading h1::after{
         top: 60%;
+    }
+
+    .feedback .heading{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .feedback .heading p{
+        max-width: 720px;
+        padding-inline: 1rem;
+    }
+
+    .contact .container form{
+        flex-direction: column;
     }
 
 }
@@ -592,6 +806,13 @@ header{
      }
      .price .container .item-3{
         grid-column: span 1;
+     }
+     .feedback{
+        display: none;
+     }
+
+     footer .container{
+        grid-template-columns: 1fr;
      }
 }
 
