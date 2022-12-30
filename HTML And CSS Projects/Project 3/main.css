@@ -222,6 +222,7 @@ header{
     flex-direction: column;
     gap: 1rem;
     align-self: center;
+    z-index: 9999;
 }
 
 
@@ -490,7 +491,66 @@ header{
     background-color: #000308;
     color: #fff;
     padding-top: 4rem;
+    padding-bottom: 6rem;
 }
+
+
+.game-most .main{
+    margin-top: 3rem;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.game-most .main img{
+    position: absolute;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.game-most .main .bg-1{
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    opacity: 80%;
+}
+
+.game-most .main .bg-2{
+    width: 400px;
+    height: 400px;
+    bottom: 0;
+    right: 28.5%;
+    opacity: 80%;
+}
+
+.game-most .main .bg-3{
+    width: 300px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+    opacity: 80%;
+}
+
+.game-most .main p{
+    max-width: 600px;
+    position: absolute;
+    top: 8%;
+    left: 36%;
+    background-color: #000308;
+    padding: 1rem;
+}
+
+.game-most .main .game{
+    bottom: 5%;
+    left: 2%;
+    width: 800px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+
 
 .banner{
     background: linear-gradient(to top,
@@ -599,6 +659,9 @@ footer{
 /* media querys  */
 
 @media (max-width:610px) {
+    .game-most{
+        display: none;
+    }
     .header .logo{
         width: 100px;
     }
@@ -693,9 +756,9 @@ footer{
     .hero .container{
         grid-template-columns: 1fr;
     }
-
+s
     .hero{
-        min-height: 150vh;
+        min-height: 120vh;
     }
     .popular-games .container{
         grid-template-columns: 1fr 1fr;
