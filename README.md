@@ -29,4 +29,9 @@
 |--------------|-------------|----|----|
 |01|VScode Website Clone|27 Nov 2022|[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Tailwind%20Projects/Vscode%20Clone)|
 
+## Javascript Questions : [Link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/Javascript/Questions)
+
+- 30 Questions ( 8 Jan 2023 ) 
+
+
 
