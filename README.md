@@ -26,7 +26,7 @@
 ## Projects ( Html & CSS ) : 
 
 |Project No|Project Name|Link|
-|-----------|-------------|----|----|
+|-----------|-------------|----|
 |01| Credit Card Landing Page |[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/HTML%20And%20CSS%20Projects/Project%201)|
 |02| Hosting Landing Page |[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/HTML%20And%20CSS%20Projects/Project%202)|
 |03| Gaming Landing Page |[link](https://github.com/SM8UTI/Ineuron-Full-JavaScript-2.0/tree/master/HTML%20And%20CSS%20Projects/Project%203)|
