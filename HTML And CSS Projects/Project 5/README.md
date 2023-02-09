@@ -1,6 +1,6 @@
 # Project-5 - ( HTML and CSS )
 
-### Project Name : Beats Estate Landing Page
+### Project Name : Beats Landing Page
 
 ### Tech Stack : Html and CSS
 
