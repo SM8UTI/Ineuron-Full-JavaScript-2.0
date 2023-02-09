@@ -73,6 +73,7 @@ h1 {
 }
 
 h2 {
+    text-transform: capitalize;
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -480,6 +481,179 @@ nav .btn-secondary{
     gap: 2rem;
 }
 
+.signUp{
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.signUp .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    row-gap: 6rem;
+}
+
+.trustBy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 1rem;
+    font-size: 1rem;
+    color: var(--tc);
+}
+
+.trustBy::after,.trustBy::before{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bgs);
+}
+
+.trustBy .logos{
+    gap: 4rem;
+}
+
+
+
+.signUp .container .col-text{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.signUp .col-form{
+    max-width: 400px;
+    margin-inline: auto;
+    background-color: var(--bgs);
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.signUpForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    background-color: var(--bgw);
+    padding: 0.8rem;
+}
+
+.signUpForm .btn-primary{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+    background-color: var(--bgp);
+}
+
+.signUpForm .btn-primary:hover{
+    color: var(--bgw);
+}
+
+.signUpForm input{
+    padding:1rem ;
+    font-size: 1rem;
+    outline: 0;
+    border: 1px solid var(--bgs);
+    border-radius: 4px;
+}
+
+.signUpForm input:focus{
+    outline: 2px solid var(--bgp);
+}
+
+.signUpForm input::placeholder{
+    text-transform: capitalize;
+}
+
+.signUpForm h4{
+    margin-top: 1rem;
+}
+
+.signUpForm img{
+    width: 250px;
+}
+
+.signUpForm hr{
+    background-color: var(--bgs);
+}
+
+.loginText{
+    font-size: 0.9rem;
+    color: var(--tc);
+    font-weight: 400;
+}
+
+.loginText a{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--bgp);
+}
+
+footer{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+footer .company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer .company p{
+    max-width: 400px;
+}
+
+footer .socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .list{
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+footer .list li{
+    color: var(--tc);
+    font-size: 0.9rem;
+    transition: all 0.4s ease-in-out;
+}
+
+footer .list li:hover{
+    color: var(--bgp);
+}
+
+footer .newsletterForm{
+    background-color: var(--bgw);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 2px soild var(--bgp) !important;
+}
+
+footer .newsletterForm input{
+    border: none;
+    outline: none;
+    background-color: var(--bgw);
+}
 
 @media (max-width:1000px) {
     .textSubHeading{
@@ -521,7 +695,7 @@ nav .btn-secondary{
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     h3{
@@ -547,6 +721,18 @@ nav .btn-secondary{
 
     .ml-6{
         margin-left: 2rem;
+    }
+
+    footer .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr!important;
+    }
+
+    footer .logo{
+        object-fit: contain;
+    }
+
+    footer .company{
+        grid-column: span 5 !important;
     }
 }
 
@@ -579,7 +765,46 @@ nav .btn-secondary{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .signUp .container{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    
+    .signUp .col-form{
+        margin-top: 0;
+        max-width: 500px;
+    }
 
+    .signUp .col-text{
+        width: 100%;
+    }
+
+    .col-text .logos{
+        width: 60%;
+        margin-inline: auto;
+        gap: 6rem;
+    }
+
+
+    footer .container {
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr!important;
+    }
+
+    footer .company {
+        grid-column: span 1 !important;
+        text-align: left;
+        align-items: flex-start;
+    }
 
 }
 
+
+@media (min-width:510px) {
+    footer .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .company{
+        grid-column: span 2;
+    }
+}
