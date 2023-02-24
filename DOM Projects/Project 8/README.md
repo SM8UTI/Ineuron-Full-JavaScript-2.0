@@ -27,7 +27,7 @@
 
 <br>
 
-![image](./ass8.1-after.png.)
+![image](./ass8.1-after.png)
 
 <br>
 
