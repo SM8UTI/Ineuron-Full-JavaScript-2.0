@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #272727;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.app {
+  max-width: 1200px;
+  min-height: 90vh;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.inputText {
+  background-color: #fff;
+  width: 100%;
+  color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 1rem;
+  gap: 1rem;
+
+  border-radius: 2rem;
+  max-width: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-inline: auto;
+  border: 3px solid #fff;
+}
+
+.inputText:hover {
+  border: 3px solid #272727;
+}
+
+.inputText input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.inputTextMain {
+  padding: 0 1rem;
+}
+
+.plusBtn {
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  color: #272727;
+  transition: all 0.4s ease-in-out;
+}
+
+.plusBtn:hover {
+  opacity: 0.8;
+}
+
+.todoList h1 {
+  text-align: center;
+  margin-block: 1rem;
+  padding: 0 2rem;
+  text-transform: capitalize;
+}
+
+.todoList .container {
+  margin-top: 2rem;
+  padding: 0 1rem;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  place-content: center;
+}
+
+@media (max-width: 768px) {
+    .todo-row{
+        max-width: 600px;
+    }
+}
+
+.todo-row {
+  width: 100%;
+  min-height: 100px;
+  background-color: #fff;
+  color: #272727;
+  padding:0.5rem 1rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  max-width: 500px;
+}
+
+.todo-row span {
+  word-wrap: break-word;
+}
+
+.todo-row .text{
+    font-weight: 600;
+}
+
+.todo-row .todo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.todo-row .icons{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+    justify-content: flex-end;
+}
+
+.todo-row .icons > *{
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.todo-row .icons > *:hover{
+    opacity: 0.6;
+}
