@@ -17,6 +17,22 @@ Features
 
 #### Source Files : [github link](https://github.com/SM8UTI/Todo-Web-App)
 
+
+### Project 2 ( Rock Paper Scissor Game )
+---
+
+- It is a simple and popular game played between two players
+
+Features
+1. The game will be between user and computer
+2. The computer will randomly select his option
+3. The user should be able to select his option from the interface
+4. Winner should be displayed after the game over
+
+#### Demo : [link](https://rock-paper-scrissor-game-sm8uti.netlify.app/)
+
+#### Source file : [github link](https://github.com/SM8UTI/Rock-Paper-Scrissor-game)
+
 ### Project 3 ( The Meal DB )
 ---
 
